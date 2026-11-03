@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monday</title>
+<meta name="description" content="Monday is a personal tool that copies its owner's own study notes from Obsidian to the owner's own Google Drive so they can be used in NotebookLM.">
+<style>
+  :root { --bg:#ffffff; --fg:#1b1f24; --muted:#5b6570; --accent:#1a5fb4; --line:#d8dde3; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#16191d; --fg:#e8ebee; --muted:#a3acb6; --accent:#7db3f5; --line:#2c333b; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  h1 { font-size:2.2rem; margin:0 0 .25rem; }
+  h2 { font-size:1.25rem; margin:2.2rem 0 .5rem; }
+  p, li { margin:.5rem 0; }
+  a { color:var(--accent); }
+  .lead { color:var(--muted); font-size:1.1rem; margin-top:0; }
+  hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+  footer { color:var(--muted); font-size:.9rem; margin-top:3rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Monday</h1>
+  <p class="lead">A personal tool that sends its owner's own study notes to the owner's own Google Drive.</p>
+
+  <h2>What Monday does</h2>
+  <p>Monday is a small personal desktop tool used by one person, its developer. It exports notes that the owner has written in Obsidian into documents and uploads them into a single folder named <em>Monday-Sync</em> in the owner's own Google Drive. From there the owner can add the documents as sources in NotebookLM to study with.</p>
+  <p>It is not a public service, has no accounts of its own, and is not offered to other users.</p>
+
+  <h2>How it uses Google data</h2>
+  <ul>
+    <li>Monday signs in with Google OAuth and requests only one permission: <code>https://www.googleapis.com/auth/drive.file</code>. This lets the app see and change <strong>only the files it has created itself</strong>. It cannot read any other file in Google Drive.</li>
+    <li>It creates the folder <em>Monday-Sync</em> and Google Docs inside it, and updates those documents when the owner's notes change.</li>
+    <li>Nothing is sent to the developer or to any third party. Data travels only between the owner's computer and Google.</li>
+  </ul>
+
+  <h2>Privacy policy</h2>
+  <p>Please read the <a href="privacy.html">Monday Privacy Policy</a> for details on how Google user data is accessed, used, stored and shared.</p>
+
+  <h2>Contact</h2>
+  <p>Questions can be raised as an issue in the <a href="https://github.com/alexyuahs/monday/issues">GitHub repository of this site (alexyuahs/monday)</a>.</p>
+
+  <hr>
+  <section lang="cs">
+    <h2>Česky</h2>
+    <p><strong>Monday</strong> je malý osobní nástroj jednoho člověka. Poznámky napsané v Obsidianu převede na dokumenty a nahraje je do jediné složky <em>Monday-Sync</em> ve vlastním Disku Google majitele, aby je šlo použít jako zdroje v NotebookLM. Žádaná je jediná pravomoc <code>drive.file</code>, tedy přístup pouze k souborům, které aplikace sama vytvořila. Aplikace nepředává data vývojáři ani třetím stranám. Podrobnosti jsou v <a href="privacy.html">zásadách ochrany soukromí</a>.</p>
+  </section>
+
+  <footer>Monday · personal project of GitHub user alexyuahs · last updated 2026-11-03</footer>
+</main>
+</body>
+</html>

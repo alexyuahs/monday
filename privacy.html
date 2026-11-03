@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monday – Privacy Policy</title>
+<meta name="description" content="Privacy policy of Monday, a personal tool that copies the owner's own notes to the owner's own Google Drive.">
+<style>
+  :root { --bg:#ffffff; --fg:#1b1f24; --muted:#5b6570; --accent:#1a5fb4; --line:#d8dde3; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#16191d; --fg:#e8ebee; --muted:#a3acb6; --accent:#7db3f5; --line:#2c333b; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  h1 { font-size:2rem; margin:0 0 .25rem; }
+  h2 { font-size:1.2rem; margin:2rem 0 .5rem; }
+  p, li { margin:.5rem 0; }
+  a { color:var(--accent); }
+  .meta { color:var(--muted); }
+  hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+  footer { color:var(--muted); font-size:.9rem; margin-top:3rem; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← Monday</a></p>
+  <h1>Monday – Privacy Policy</h1>
+  <p class="meta">Effective date: 2026-11-03 · Last updated: 2026-11-03</p>
+
+  <h2>Who we are</h2>
+  <p>Monday is a personal, single-user tool developed and used by one individual (GitHub user <em>alexyuahs</em>), referred to here as "the developer" and "the owner". It is not a commercial product and is not offered to other users. The homepage is <a href="./">this site</a>.</p>
+
+  <h2>What Google user data the app accesses</h2>
+  <p>Monday uses Google OAuth with the single scope <code>https://www.googleapis.com/auth/drive.file</code>. With this scope the app can view and manage <strong>only the files and folders that the app itself created</strong> in the signed-in user's Google Drive: a folder named <em>Monday-Sync</em> and the Google Docs inside it. The app cannot see, read or change any other file in Google Drive. It does not request access to Gmail, contacts, calendar, location or any other Google service.</p>
+  <p>The only content the app handles is the owner's own study notes, which the owner chooses to export. The app does not collect or access any other personal information.</p>
+
+  <h2>How the data is used</h2>
+  <p>The data is used for one purpose only: to create and update documents in the owner's Google Drive so that the owner can use them as sources in NotebookLM. The app does not use Google user data for advertising, profiling, analytics, training of machine-learning models or any other purpose.</p>
+
+  <h2>Storage and security</h2>
+  <ul>
+    <li>The app runs on the owner's own computer. The developer operates no server, database or website that receives user data.</li>
+    <li>The OAuth refresh token is stored locally on the owner's computer, in a configuration file that only the owner's operating-system account can read.</li>
+    <li>Documents created by the app are stored in the owner's own Google Drive and protected by the owner's Google account.</li>
+  </ul>
+
+  <h2>Sharing and disclosure</h2>
+  <p>Monday does not transfer, sell or share Google user data with the developer, with third parties or with any other service. Data moves only between the owner's computer and Google's servers over encrypted connections. The owner may separately choose to add the created documents to NotebookLM, which is governed by Google's own terms and privacy policy.</p>
+
+  <h2>Compliance with Google API Services User Data Policy</h2>
+  <p>Monday's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>The app keeps no copy of Google user data outside the owner's computer and Google Drive. Access can be withdrawn at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; the stored token can be removed by deleting the configuration entry on the owner's computer, and the created folder and documents can be deleted from Google Drive.</p>
+
+  <h2>Cookies, analytics and children</h2>
+  <p>This website uses no cookies, analytics or third-party scripts. The app is not directed to children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>Any change will be published on this page together with an updated date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions can be raised as an issue in the <a href="https://github.com/alexyuahs/monday/issues">GitHub repository of this site (alexyuahs/monday)</a>.</p>
+
+  <hr>
+  <section lang="cs">
+    <h2>Česky (shrnutí)</h2>
+    <p>Monday je osobní nástroj jednoho člověka. Používá jediné oprávnění Google <code>drive.file</code>, takže vidí jen složku <em>Monday-Sync</em> a dokumenty, které sám vytvořil ve vlastním Disku majitele. Nepracuje s žádnými jinými soubory. Vývojář nemá žádný server, data se neposílají nikomu kromě Googlu a nepoužívají se k reklamě, analytice ani trénování modelů. Přihlašovací token je uložený jen v počítači majitele. Přístup lze kdykoli odvolat na myaccount.google.com/permissions. Platí požadavky Google API Services User Data Policy včetně Limited Use.</p>
+  </section>
+
+  <footer>Monday · personal project of GitHub user alexyuahs</footer>
+</main>
+</body>
+</html>
